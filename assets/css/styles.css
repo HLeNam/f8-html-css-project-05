@@ -23,3 +23,290 @@ select {
     font-family: inherit;
     font-size: inherit;
 }
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    --height: 58px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 149px;
+    height: var(--height);
+    line-height: var(--height);
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background: #212832;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.section-label::before {
+    content: "";
+    width: 18px;
+    height: 2px;
+    margin-right: 12px;
+    background: #696d77;
+}
+
+.section-heading {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25; /* 125% */
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66667; /* 166.667% */
+}
+
+/* Header */
+.header {
+    padding: 42px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    margin-left: 46px;
+}
+
+.navbar__link {
+    padding: 8px 24px;
+    color: #696d76;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.navbar__link--active,
+.navbar__link:hover {
+    color: #212832;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link--active {
+    position: relative;
+}
+
+.navbar__link--active::after {
+    position: absolute;
+    content: "";
+    inset: auto 24px 0 24px;
+    height: 1px;
+    border-radius: 0.5px;
+    background: #7264d6;
+}
+
+.header-cta {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+
+.header-cta__login {
+    color: #212832;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.header-cta__sign-up {
+    --height: 52px;
+
+    min-width: 113px;
+}
+
+/* Hero */
+.hero {
+    padding: 34px 0;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    width: 46.5%;
+}
+
+.hero__media {
+    margin-left: 160px;
+}
+
+.hero__heading {
+    font-size: 6rem;
+    line-height: 1.16667; /* 116.667% */
+}
+
+.hero__heading--highlight {
+    color: #7264d6;
+}
+
+.hero__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 540px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 23px;
+    outline: none;
+    border: none;
+    border-radius: inherit;
+}
+
+.hero__input::placeholder {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.hero__form-submit {
+    margin-right: 8px;
+    outline: none;
+    border: none;
+    background: #7264d6;
+}
+
+.hero__message {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71429; /* 171.429% */
+}
+
+.hero__media {
+    position: relative;
+}
+
+.hero-data__deposit {
+    position: absolute;
+    top: 113px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    width: 174px;
+    height: 46px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+}
+
+.hero-data__deposit-title {
+    margin-left: 8px;
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-data__deposit-data {
+    margin-left: 19px;
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.hero-data__fund {
+    position: absolute;
+    right: -74px;
+    bottom: 61px;
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+}
+
+.hero-data__fund-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 14px;
+}
+
+.hero-data__fund-data {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero-data__fund-title {
+    margin-top: 5px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.hero-data__interest {
+    position: absolute;
+    top: 127px;
+    right: -44px;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+}
+
+.hero-data__interest-data {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+}
+
+.hero-data__interest-title {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}

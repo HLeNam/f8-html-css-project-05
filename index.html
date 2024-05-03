@@ -97,5 +97,129 @@
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body></body>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <img
+                        src="./assets/img/logo.svg"
+                        alt="CeloBank"
+                        class="logo"
+                    />
+
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li>
+                                <a
+                                    href="#!"
+                                    class="navbar__link navbar__link--active"
+                                >
+                                    Home
+                                </a>
+                                <a href="#!" class="navbar__link">Products</a>
+                                <a href="#!" class="navbar__link">Features</a>
+                                <a href="#!" class="navbar__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Action -->
+                    <div class="header-cta">
+                        <a href="#!" class="header-cta__login">Log in</a>
+                        <a href="#!" class="btn header-cta__sign-up">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <p class="section-label">Digital Smart Wallet</p>
+                        <h1 class="hero__heading section-heading">
+                            Digital
+                            <span class="hero__heading--highlight"
+                                >Payment</span
+                            >
+                            For Everyone.
+                        </h1>
+                        <p class="hero__desc section-desc">
+                            We bring together eveything that’s required to build
+                            websites and apps that accept payments and send
+                            payouts globally. We are the best platform.
+                        </p>
+
+                        <form action="" class="hero__form">
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Your email address"
+                                class="hero__input"
+                            />
+                            <button type="submit" class="btn hero__form-submit">
+                                Get Started
+                            </button>
+                        </form>
+
+                        <p class="hero__message">
+                            *We’ll respect the inbox and never share your email.
+                        </p>
+                    </section>
+
+                    <!-- Hero media -->
+                    <div class="hero__media">
+                        <figure class="hero__image">
+                            <img
+                                src="./assets/img/mobile_screen.svg"
+                                alt=""
+                                class="hero__img"
+                            />
+                        </figure>
+
+                        <!-- Hero media data -->
+                        <!-- Deposit -->
+                        <div class="hero-data__deposit">
+                            <img
+                                src="./assets/icons/hero-decor-01.svg"
+                                alt=""
+                                class="hero-data__deposit-icon"
+                            />
+                            <span class="hero-data__deposit-title">
+                                Deposite
+                            </span>
+                            <span class="hero-data__deposit-data">$32000</span>
+                        </div>
+                        <!-- Secured funds -->
+                        <div class="hero-data__fund">
+                            <div class="hero-data__fund-wrap">
+                                <img
+                                    src="./assets/icons/hero-decor-02.svg"
+                                    alt=""
+                                    class="hero-data__fund-icon"
+                                />
+                                <div class="hero-data__fund-info">
+                                    <p class="hero-data__fund-data">$1.310</p>
+                                    <p class="hero-data__fund-title">
+                                        SECURED FUNDS
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Interest -->
+                        <div class="hero-data__interest">
+                            <p class="hero-data__interest-data">0%</p>
+                            <p class="hero-data__interest-title">Interest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
