@@ -310,3 +310,133 @@ select {
     font-size: 1.6rem;
     font-weight: 400;
 }
+
+/* Work */
+.work {
+    margin-top: 76px;
+    padding: 42px 0;
+}
+
+.work__inner {
+    display: flex;
+    align-items: center;
+}
+
+.work__media {
+    position: relative;
+    width: 40.171%;
+}
+
+.work__content {
+    width: 40.171%;
+    margin-left: auto;
+}
+
+.work__image {
+    position: relative;
+}
+
+.work__image::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/work-03.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}
+
+.work__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-left: 7px;
+    width: calc(100% - 14px);
+}
+
+.work__media-decor {
+    position: absolute;
+    top: 66px;
+    right: 62px;
+}
+
+.work__media-card {
+    position: absolute;
+    z-index: 2;
+    right: -100px;
+    bottom: 96px;
+    width: 226px;
+    height: 70px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+
+.work__media-card-wrap {
+    padding: 15px;
+    display: flex;
+}
+
+.work__media-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: #4ab5e3;
+}
+
+.work__media-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.work__media-info {
+    margin-left: 10px;
+}
+
+.work__media-title {
+    color: #212832;
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.work__media-stats {
+    margin-top: 5px;
+    color: #696d76;
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.work__list {
+    margin-top: 70px;
+}
+
+.work-item__title {
+    margin-top: 30px;
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45455; /* 145.455% */
+}
+
+.work-item__desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
