@@ -67,7 +67,7 @@ select {
     width: 18px;
     height: 2px;
     margin-right: 12px;
-    background: #696d77;
+    background: currentColor;
 }
 
 .section-heading {
@@ -941,4 +941,70 @@ select {
 
 .blog-item__cta:hover {
     color: #7264d6;
+}
+
+/* Install App */
+.install {
+    margin-top: 160px;
+}
+
+.install__container {
+    border-radius: 24px;
+    background: #7264d6;
+}
+
+.install__inner {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.install__label,
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__desc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 435px;
+}
+
+.install__cta {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+    margin-top: 38px;
+}
+
+.install__cta-btn {
+    --height: 64px;
+
+    min-width: 182px;
+    background: #fff;
+}
+
+.install__decor {
+    position: absolute;
+}
+
+.install__decor:nth-of-type(1) {
+    top: 49px;
+    left: 112px;
+}
+
+.install__decor:nth-of-type(2) {
+    top: 49px;
+    right: 112px;
+}
+
+.install__decor:nth-of-type(3) {
+    left: 166px;
+    bottom: 49px;
+}
+
+.install__decor:nth-of-type(4) {
+    right: 166px;
+    bottom: 49px;
 }
