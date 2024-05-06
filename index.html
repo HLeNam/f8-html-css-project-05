@@ -94,34 +94,46 @@
             rel="stylesheet"
         />
 
+        <!-- Animation -->
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+
         <!-- Styles CSS -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body style="height: 5000px">
+    <body>
         <!-- Header -->
         <header class="header">
             <div class="container">
                 <div class="header__inner">
                     <!-- Logo -->
-                    <img
-                        src="./assets/img/logo.svg"
-                        alt="CeloBank"
-                        class="logo"
-                    />
+                    <a href="#">
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="CeloBank"
+                            class="header__logo"
+                        />
+                    </a>
 
                     <!-- Navbar -->
                     <nav class="navbar">
                         <ul class="navbar__list">
                             <li>
                                 <a
-                                    href="#!"
+                                    href="#home"
                                     class="navbar__link navbar__link--active"
                                 >
                                     Home
                                 </a>
-                                <a href="#!" class="navbar__link">Products</a>
-                                <a href="#!" class="navbar__link">Features</a>
-                                <a href="#!" class="navbar__link">Blog</a>
+                                <a href="#products" class="navbar__link">
+                                    Products
+                                </a>
+                                <a href="#features" class="navbar__link">
+                                    Features
+                                </a>
+                                <a href="#blog" class="navbar__link">Blog</a>
                             </li>
                         </ul>
                     </nav>
@@ -140,7 +152,12 @@
             <div class="container">
                 <div class="hero__inner">
                     <!-- Hero content -->
-                    <section class="hero__content">
+                    <section
+                        class="hero__content"
+                        data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine"
+                    >
                         <p class="section-label">Digital Smart Wallet</p>
                         <h1 class="hero__heading section-heading">
                             Digital
@@ -180,12 +197,20 @@
                                 src="./assets/img/mobile_screen.svg"
                                 alt=""
                                 class="hero__img"
+                                class="hero__img"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="center-bottom"
                             />
                         </figure>
 
                         <!-- Hero media data -->
                         <!-- Deposit -->
-                        <div class="hero-data__deposit">
+                        <div
+                            class="hero-data__deposit"
+                            data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1000"
+                        >
                             <img
                                 src="./assets/icons/hero-decor-01.svg"
                                 alt=""
@@ -197,7 +222,12 @@
                             <span class="hero-data__deposit-data">$32000</span>
                         </div>
                         <!-- Secured funds -->
-                        <div class="hero-data__fund">
+                        <div
+                            class="hero-data__fund"
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                            class="hero__secured"
+                        >
                             <div class="hero-data__fund-wrap">
                                 <img
                                     src="./assets/icons/hero-decor-02.svg"
@@ -213,7 +243,12 @@
                             </div>
                         </div>
                         <!-- Interest -->
-                        <div class="hero-data__interest">
+                        <div
+                            class="hero-data__interest"
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                        >
                             <p class="hero-data__interest-data">0%</p>
                             <p class="hero-data__interest-title">Interest</p>
                         </div>
@@ -224,7 +259,7 @@
 
         <main>
             <!-- Work -->
-            <section class="work">
+            <section id="products" class="work">
                 <div class="container">
                     <div class="work__inner">
                         <!-- Work media -->
@@ -245,7 +280,12 @@
                             />
 
                             <!-- Card -->
-                            <div class="work__media-card">
+                            <div
+                                class="work__media-card"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom"
+                                data-aos-duration="2000"
+                            >
                                 <div class="work__media-card-wrap">
                                     <div class="work__media-image">
                                         <div class="work__media-img">
@@ -272,7 +312,12 @@
                             <p class="section-label">Digital Smart Wallet</p>
                             <h2 class="section-heading">How It Works</h2>
 
-                            <div class="work__info">
+                            <div
+                                class="work__info"
+                                data-aos="fade-left"
+                                data-aos-duration="1500"
+                                data-aos-easing="ease-in-sine"
+                            >
                                 <ul class="work__list">
                                     <li class="work-item">
                                         <p class="work-item__title">
@@ -315,7 +360,7 @@
             </section>
 
             <!-- Feature -->
-            <section class="feature">
+            <section id="features" class="feature">
                 <div class="container">
                     <div class="feature__inner">
                         <!-- Feature content -->
@@ -329,7 +374,13 @@
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
-                            <ul class="feature__list">
+                            <ul
+                                class="feature__list"
+                                data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="300"
+                                data-aos-offset="0"
+                            >
                                 <li class="feature__item">Global Payments</li>
                                 <li class="feature__item">
                                     One-Click Purchase
@@ -351,7 +402,12 @@
                                 />
                             </figure>
                             <!-- Feature card -->
-                            <div class="feature__send-money">
+                            <div
+                                class="feature__send-money"
+                                data-aos="fade-left"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="1000"
+                            >
                                 <figure class="feature__send-money-icon-wrap">
                                     <img
                                         src="./assets/icons/paper-plane.svg"
@@ -376,7 +432,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="feature__income">
+                            <div
+                                class="feature__income"
+                                data-aos="fade-left"
+                                data-aos-easing="ease-in-sine"
+                                data-aos-duration="1000"
+                            >
                                 <div class="feature__income-wrap">
                                     <figure class="feature__income-img-wrap">
                                         <img
@@ -402,7 +463,13 @@
                             </figure>
 
                             <!-- Card -->
-                            <div class="feature-card__position">
+                            <div
+                                class="feature-card__position"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="top-center"
+                                data-aos-offset="0"
+                                data-aos-duration="1500"
+                            >
                                 <div class="feature-card">
                                     <div class="feature-card__wrap">
                                         <p class="feature-card__title">
@@ -485,7 +552,13 @@
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
                             </p>
-                            <ul class="feature__list">
+                            <ul
+                                class="feature__list"
+                                data-aos="fade-zoom-in"
+                                data-aos-easing="ease-in-back"
+                                data-aos-delay="300"
+                                data-aos-offset="0"
+                            >
                                 <li class="feature__item">Powerfull App</li>
                                 <li class="feature__item">
                                     Transparency And Speed
@@ -521,7 +594,10 @@
                     <div class="feedback__list">
                         <!-- Feedback item 1 -->
                         <div class="feedback-item">
-                            <div class="feedback-item__content">
+                            <div
+                                class="feedback-item__content"
+                                data-aos="zoom-in-down"
+                            >
                                 <p class="feedback-item__desc">
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
@@ -547,7 +623,10 @@
 
                         <!-- Feedback item 2 -->
                         <div class="feedback-item">
-                            <div class="feedback-item__content">
+                            <div
+                                class="feedback-item__content"
+                                data-aos="zoom-in-down"
+                            >
                                 <p class="feedback-item__desc">
                                     Fantastic platform for online banking. The
                                     best online banking platform I have used.
@@ -688,7 +767,7 @@
             </section>
 
             <!-- Blog -->
-            <section class="blog">
+            <section id="blog" class="blog">
                 <div class="container">
                     <div class="blog__inner">
                         <section class="blog__top">
@@ -878,21 +957,37 @@
 
                         <!-- Decor -->
                         <img
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            data-aos-offset="200"
                             src="./assets/icons/star-icon.svg"
                             alt=""
                             class="install__decor"
                         />
                         <img
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            data-aos-offset="200"
                             src="./assets/icons/star-icon.svg"
                             alt=""
                             class="install__decor"
                         />
                         <img
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            data-aos-offset="200"
                             src="./assets/icons/star-icon.svg"
                             alt=""
                             class="install__decor"
                         />
                         <img
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000"
+                            data-aos-offset="200"
                             src="./assets/icons/star-icon.svg"
                             alt=""
                             class="install__decor"
@@ -1016,5 +1111,10 @@
                 © 2020 Ligft Media All rights reserved.
             </p>
         </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

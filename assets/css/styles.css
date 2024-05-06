@@ -4,6 +4,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -87,12 +88,20 @@ select {
 
 /* Header */
 .header {
-    padding: 42px 0;
+    position: sticky;
+    top: -30px;
+    padding: 42px 0 12px;
+    background: #fff;
+    z-index: 5;
 }
 
 .header__inner {
     display: flex;
     align-items: center;
+}
+
+.header__logo {
+    margin-top: 4px;
 }
 
 .navbar__list {
@@ -150,7 +159,7 @@ select {
 
 /* Hero */
 .hero {
-    padding: 34px 0;
+    padding: 64px 0 34px;
 }
 
 .hero__inner {
@@ -287,8 +296,7 @@ select {
 .hero-data__interest {
     position: absolute;
     top: 127px;
-    right: -44px;
-    transform: translateX(100%);
+    right: -174px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,8 +321,8 @@ select {
 
 /* Work */
 .work {
-    margin-top: 76px;
-    padding: 42px 0;
+    margin-top: 18px;
+    padding: 100px 0 42px;
 }
 
 .work__inner {
@@ -443,8 +451,8 @@ select {
 
 /* Feature */
 .feature {
-    margin-top: 118px;
-    padding: 42px 0;
+    margin-top: 18px;
+    padding: 100px 0 42px;
 }
 
 .feature__inner {
@@ -851,8 +859,8 @@ select {
 
 /* Blog */
 .blog {
-    margin-top: 76px;
-    padding: 42px;
+    margin-top: 48px;
+    padding: 70px 0 42px;
 }
 
 .blog__top {
@@ -1122,4 +1130,20 @@ select {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75; /* 175% */
+}
+
+.install__decor {
+    animation: swing 1s ease-in-out infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
